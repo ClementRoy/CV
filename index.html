@@ -1,80 +1,321 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
 	<head>
 		<meta charset="utf-8">
 		<title>Clément Roy - CV</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Clément Roy" />
+
+		<style>
+			body {
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 12px;
+				background: #f3f3f3;
+				margin: 0;
+				padding: 0;
+			}
+
+			#header {
+				background: #3e3e3e; 
+			}
+			#header h1 {
+				margin: 0;
+			}
+
+			#content {
+				width: 1000px;
+				margin: 0 auto;
+			}
+			#footer {
+				height: 20px;
+				background: #3e3e3e;
+			}
+
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+
+		/*
+
+			POO : vert : rgba(151,191,13,0.8)
+			API : Bleu : rgba(0,158,224,0.8)
+			a11y : gris foncé : rgba(88,88,88,0.8)
+			i18n : gris clair : rgba(161,161,161,0.8)
+			MVC : orange : rgba(242,148,0,0.8)
+
+
+
+		*/
+			$(document).ready(function() {  
+
+/* Sample
+
+	<g data-element="skill" data-name="php-sql">
+		<circle class="circle" fill="#FFFFFF" stroke="#97BF0D" stroke-width="3.5" cx="228.665" cy="490.852" r="10.5"/>
+
+		<line fill="#58585A" stroke="#888887" x1="228.665" y1="479.352" x2="228.665" y2="286.559"/>
+
+		<rect x="228.664" y="286.882" fill="none" width="94.001" height="20"/>
+
+		<text transform="matrix(1 0 0 1 233.6641 296.002)" fill="#58585A" font-family="'Arial'" font-size="12">PHP/SQL</text>
+
+		<path fill="none" stroke="#97BF0D" stroke-width="3.5" d="M235.828,482.88c0,0,39.997-34.888,70.663-34.888
+		s39.332,18.629,66.666,18.629c100.299,0,315.23-204.581,446.388-204.581c38.051,0,190.691-4.795,190.691-4.795"/>
+
+	</g>
+
+*/
+					$('svg g[data-element="skill"]').each(function(){
+						var i = 0;
+						var skill = $(this);
+
+						var circle = skill.children('circle');
+						var line = skill.children('line');
+						var text = skill.children('text');
+						var path = skill.children('path');
+
+						var color = circle.attr('stroke');
+
+						var circleFill = circle.attr('fill');
+						var circleR = circle.attr('r')
+						var lineColor = line.attr('fill');
+						var lineStroke = line.attr('stroke');
+						var textColor = text.attr('fill');
+
+						skill.on('mouseover', function(event){
+							text.attr('fill', '#000');
+							line.attr('fill', '#000');
+							line.attr('stroke', '#000');
+							$('svg g[data-element="skill"]').not(this).stop().animate({'opacity':'0.3'}, 200);
+							pulse = self.setInterval(function(){
+							    i++;
+							    circle.attr("r", function(){ return (Math.sin(i/5) + 1)*2+10.5; });
+							}, 50);
+						});
+
+						skill.on('mouseleave', function(event){
+							// circle.attr('fill', circleFill);
+							circle.attr('r', circleR);
+							text.attr('fill', textColor);
+							line.attr('fill', lineColor);
+							line.attr('stroke', lineStroke);
+							$('svg g[data-element="skill"]').not(this).stop().animate({'opacity':'1'}, 200);
+							window.clearInterval(pulse);
+						});
+
+
+					});
+
+            }); 
+
+		</script>
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	</head>
-	<body>
+	<body role="document">
 
-		<h1>Clément Roy</h1>
-		<h2>Desktop & Mobile Web Développeur</h2>
-
-		<ul>
-			<li><a href="mailto:mail@clementroy.fr">mail@clementroy.fr</a></li>
-			<li><a href="tel:0659292455">06 59 29 24 55</a></li>
-			<li><a href="http://twitter.com/ClementRoy">twitter.com/ClementRoy</a></li>
-			<li><a href="http://github.com/ClementRoy">github.com/ClementRoy</a></li>
-		</ul>
-
-		<section>
-			<h2>Éducation</h2>
-
-			<h3>Diplome Universitaire et Technologique, 2010</h3>
-			<p>Institut Universitaire et Technologique, Paris Sud X</p>
-			<p>Major de promotion</p>
-
-			<h3>Classe préparatoire intégrée, 2009</h3>
-			<p>Université de Technologie de Compiègne, Compiègne</p>
-			<p>TOEIC : 960</p>
-
-			<h3>Baccalauréat Scientifique option Sciences de l'Ingénieur spécialité Mathématiques</h3>
-			<p>Lycée Mireille Grenet, Compiègne</p>
-			<p>Mention Très Bien</p>
-
-		</section>
-
-		<section>
-			<h2>Parcours professionnel</h2>
-
-			<h3>Inovagora</h3>
-			<p>Développeur Web - Août 2010 à aujourd'hui</p>
-			<p>eZ Publish / WebApp / Cartographie / Web Services / Gestion de projet / Consultant technique / Assistance technique</p>
-
-			<h3>Feelance</h3>
-			<p>Développeur Web - Janvier 2009 à aujourd'hui</p>
-			<p>WebApp / Développement sur mesure</p>
-
-		</section>
-
-		<section>
-			<h2>Sur le web</h2>
-
-			<h3>Conférence</h3>
-			<p>Développement d'un site à l'aide de jQuery Mobile - <a href="http://2011.kiwiparty.fr/">Kiwi Party 2011</a></p>
-			<a href="http://dai.ly/k4ouqE">http://dai.ly/k4ouqE</a>
-
-			<h3>Article</h3>
-			<p>Ajouter une icône pour iPhone/iPad - <a href="http://www.alsacreations.com">www.alsacreations.com</a></p>
-			<a href="http://goo.gl/Q06I4">http://goo.gl/Q06I4</a>
-
-		</section>
-
-		<section>
-			<h2>Compétences techniques</h2>
-			<p>Afficher le graphique</p>
-		</section>
-
-		<section>
-			<h2>Savoir-faire</h2>
-			<p>Afficher les bulles</p>
+		<div id="header">
+			<h1>Clément Roy</h1>
+			<h2>Desktop & Mobile Web Développeur</h2>
 
 			<ul>
-				<li>Développement Web</li>
-				<li>Gestion de projet</li>
-				<li>Gestion d'équipe</li>
-				<li>Consultation technique</li>
+				<li><a href="mailto:mail@clementroy.fr">mail@clementroy.fr</a></li>
+				<li><a href="tel:0659292455">06 59 29 24 55</a></li>
+				<li><a href="http://twitter.com/ClementRoy" target="_blank">twitter.com/ClementRoy</a></li>
+				<li><a href="http://github.com/ClementRoy" target="_blank">github.com/ClementRoy</a></li>
 			</ul>
 
-		</section>
+
+
+		</div>
+
+		<div id="content">
+
+		<div style="position:relative;width:500px;height:500px;background:#dcdcdc">
+	        <canvas id="i18n_Canvas" width="90" height="90" style="position:absolute;top:140px;left:0px;">  
+	            <p>i18n</p>
+	        </canvas>
+	        <canvas id="API_Canvas" width="160" height="160" style="position:absolute;top:50px;left:40px;">  
+	            <p>POO</p>
+	        </canvas> 
+	        <canvas id="MVC_Canvas" width="100" height="100" style="position:absolute;top:0px;left:20px;">  
+	            <p>MVC</p>
+	        </canvas> 
+	        <canvas id="a11y_Canvas" width="110" height="110" style="position:absolute;top:140px;left:140px;">  
+	            <p>a11y</p>
+	        </canvas>
+	        <canvas id="POO_Canvas" width="140" height="140" style="position:absolute;top:30px;left:160px;">  
+	            <p>POO</p>
+	        </canvas> 
+		</div>
+
+		<section>
+				<h2>Formation</h2>
+
+				<h3>Diplome Universitaire de Technologie, 2010</h3>
+				<p>Institut Universitaire de Technologie, Paris Sud X</p>
+				<p>Major de promotion</p>
+
+				<h3>Classe préparatoire intégrée, 2009</h3>
+				<p>Université de Technologie de Compiègne, Compiègne</p>
+				<p>TOEIC : 960</p>
+
+				<h3>Baccalauréat Scientifique option Sciences de l'Ingénieur spécialité Mathématiques</h3>
+				<p>Lycée Mireille Grenet, Compiègne</p>
+				<p>Mention Très Bien</p>
+
+			</section>
+
+			<section>
+				<h2>Parcours professionnel</h2>
+
+				<h3>Inovagora</h3>
+				<p>Développeur Web - Août 2010 à aujourd'hui</p>
+				<p>eZ Publish / WebApp / Cartographie / Web Services / Gestion de projet / Consultant technique / Assistance technique</p>
+
+				<h3>Feelance</h3>
+				<p>Développeur Web - Janvier 2009 à aujourd'hui</p>
+				<p>WebApp / Développement sur mesure</p>
+
+			</section>
+
+			<section>
+				<h2>Sur le web</h2>
+
+				<h3>Conférence</h3>
+				<p>Développement d'un site à l'aide de jQuery Mobile - <a href="http://2011.kiwiparty.fr/" target="_blank">Kiwi Party 2011</a></p>
+				<a href="http://dai.ly/k4ouqE">http://dai.ly/k4ouqE</a>
+
+				<h3>Article</h3>
+				<p>Ajouter une icône pour iPhone/iPad - <a href="http://www.alsacreations.com" target="_blank">www.alsacreations.com</a></p>
+				<a href="http://goo.gl/Q06I4" target="_blank">http://goo.gl/Q06I4</a>
+
+			</section>
+
+			<section>
+				<h2>Compétences techniques</h2>
+				<p>Afficher le graphique</p>
+
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1082.557px" height="595.28px" viewBox="0 0 1082.557 595.28" enable-background="new 0 0 1082.557 595.28"
+	 xml:space="preserve">
+
+<g>
+
+
+	<g data-element="graph">
+
+		<!-- Horizontal Lines -->
+		<line fill="#D9DADB" stroke="#B1B3B4" stroke-dasharray="4" x1="76.334" y1="429.612" x2="1010.236" y2="429.612"/>
+		<line fill="#D9DADB" stroke="#B1B3B4" stroke-dasharray="4" x1="76.334" y1="368.29" x2="1010.236" y2="368.29"/>
+		<line fill="#D9DADB" stroke="#B1B3B4" stroke-dasharray="4" x1="76.334" y1="306.968" x2="1010.236" y2="306.968"/>
+		<line fill="#D9DADB" stroke="#B1B3B4" stroke-dasharray="4" x1="76.334" y1="245.644" x2="1010.236" y2="245.644"/>
+		
+		<!-- Bottom Line -->
+		<rect x="75.834" y="488.937" fill="#464648" width="934.902" height="3"/>
+
+		<!-- Dates -->
+		<text transform="matrix(1 0 0 1 102.9785 518.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2004</text>
+		<text transform="matrix(1 0 0 1 212.4258 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2005</text>
+		<text transform="matrix(1 0 0 1 321.8721 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2006</text>
+		<text transform="matrix(1 0 0 1 431.3193 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2007</text>
+		<text transform="matrix(1 0 0 1 540.7656 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2008</text>
+		<text transform="matrix(1 0 0 1 759.6602 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2010</text>
+		<text transform="matrix(1 0 0 1 650.2129 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2009</text>
+		<text transform="matrix(1 0 0 1 869.1074 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2011</text>
+		<text transform="matrix(1 0 0 1 978.5547 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2012</text>
+
+	</g>
+
+
+	<!-- Skills -->
+	<g data-element="skill" data-name="html-css" id="htmlCss" >
+		<line fill="#58585A" stroke="#888887" x1="116.326" y1="213.644" x2="116.326" y2="480.437"/>
+		<text transform="matrix(1 0 0 1 121.3252 222.4307)" fill="#58585A" font-family="'Arial'" font-size="12">(x)HTML/CSS</text>
+		<path fill="none" stroke="#009EE0" stroke-width="3.5" d="
+		M126.826,485.25c0,0,44.208-9.539,75.94-25.059s48.41-40.578,79.296-40.578c30,0,47.742,21.049,93.742,21.049c105.529,0,189.946-187.294,307.69-187.332c136.785-0.044,326.741-4,326.741-4"/>
+		
+    	<circle class="circle" fill="#FFFFFF" stroke="#39A9DC" stroke-width="3.5" cx="116.326" cy="490.937" r="10.5"/>
+   	</g>
+
+	<g data-element="skill" data-name="php-sql">
+		<line fill="#58585A" stroke="#888887" x1="228.665" y1="479.352" x2="228.665" y2="286.559"/>
+		<text transform="matrix(1 0 0 1 233.6641 296.002)" fill="#58585A" font-family="'Arial'" font-size="12">PHP/SQL</text>
+		<path fill="none" stroke="#97BF0D" stroke-width="3.5" d="M235.828,482.88c0,0,39.997-34.888,70.663-34.888
+		s39.332,18.629,66.666,18.629c100.299,0,315.23-204.581,446.388-204.581c38.051,0,190.691-4.795,190.691-4.795"/>
+		<circle class="circle" fill="#FFFFFF" stroke="#97BF0D" stroke-width="3.5" cx="228.665" cy="490.852" r="10.5"/>
+	</g>
+
+	<g data-element="skill" data-name="jquery">
+		<line fill="#58585A" stroke="#888887" x1="444.669" y1="479.437" x2="444.669" y2="182.644"/>
+		<text transform="matrix(1 0 0 1 449.668 190.7637)" fill="#58585A" font-family="'Arial'" font-size="12">JQUERY</text>
+		<path fill="none" stroke="#D40050" stroke-width="3.5" d="M451.737,482.88c0,0,48.164-29.298,64.93-36.855
+		c26.618-12,68.491-26.702,104.491-36.702s60.001-13.999,73.334-17.332c13.333-3.334,41.334-12.668,68-47.334
+		s57.053-79.497,247.744-79.497" id="theMotionPath3"/>
+		<circle class="circle" fill="#FFFFFF" stroke="#D40050" stroke-width="3.5" cx="444.668" cy="490.937" r="10.5"/>
+	</g>
+
+	<g data-element="skill" data-name="java">
+		<line fill="#58585A" stroke="#888887" x1="553.785" y1="479.437" x2="553.785" y2="182.644"/>
+		<text transform="matrix(1 0 0 1 558.7842 190.7637)" fill="#58585A" font-family="'Arial'" font-size="12">JAVA</text>
+		<path fill="none" stroke="#803689" stroke-width="3.5" d="M559.965,482.974c0,0,15.83-9.342,31.824-28.01
+		c15.993-18.666,34.387-40.666,51.18-40.666c27.989,0,25.59,46,97.348,76.639"/>
+		<circle class="circle" fill="#FFFFFF" stroke="#803689" stroke-width="3.5" cx="553.785" cy="490.937" r="10.5"/>
+	</g>
+
+	<g data-element="skill" data-name="html5-css3">
+		<line fill="#58585A" stroke="#888887" x1="711.482" y1="479.437" x2="711.482" y2="114.644"/>
+		<text transform="matrix(1 0 0 1 716.4824 123.7637)" fill="#58585A" font-family="'Arial'" font-size="12">HTML5/CSS3</text>
+		<path fill="none" stroke="#F29400" stroke-width="3.5" d="M716.468,481.385c0,0,50.296-94.055,77.515-109.43
+		c30.018-16.956,55.074-18.553,69.846-32.634c15.506-14.781,49.735-66.248,146.408-66.248"/>
+		<circle class="circle" fill="#FFFFFF" stroke="#F29400" stroke-width="3.5" cx="711.482" cy="490.937" r="10.5"/>
+	</g>
+
+	<g data-element="skill" data-name="ezpublish">
+		<line fill="#58585A" stroke="#888887" x1="772.544" y1="479.437" x2="772.544" y2="150.644"/>
+		<text transform="matrix(1 0 0 1 777.5439 159.7637)" fill="#58585A" font-family="'Arial'" font-size="12">EZPUBLISH</text>
+		<path fill="none" stroke="#915E36" stroke-width="3.5" d="M779.267,483.707c0,0,174.085-116.567,230.97-187.477"/>
+		<circle class="circle" fill="#FFFFFF" stroke="#915E36" stroke-width="3.5" cx="772.544" cy="490.937" r="10.5"/>
+	</g>
+
+	<g data-element="skill" data-name="jqm">
+		<line fill="#58585A" stroke="#888887" x1="829.611" y1="479.437" x2="829.611" y2="182.644"/>
+		<text transform="matrix(1 0 0 1 834.6104 190.7637)" fill="#58585A" font-family="'Arial'" font-size="12">JQUERY MOBILE</text>
+		<path fill="none" stroke="#87888A" stroke-width="3.5" d="M834.28,482.385c0,0,105.273-186.063,175.956-201.397"/>
+		<circle class="circle" fill="#FFFFFF" stroke="#87888A" stroke-width="3.5" cx="829.611" cy="490.937" r="10.5"/>
+	</g>
+
+</g>
+</svg>
+
+
+
+
+			</section>
+
+			<section>
+				<h2>Savoir-faire</h2>
+				<p>Afficher les bulles</p>
+
+				<ul>
+					<li>Développement Web</li>
+					<li>Gestion de projet</li>
+					<li>Gestion d'équipe</li>
+					<li>Consultation technique</li>
+				</ul>
+
+			</section>
+		</div>
+
+		<div id="footer">
+
+		</div>
+
+
+
 
 	</body>
 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1082.557px" height="595.28px" viewBox="0 0 1082.557 595.28" enable-background="new 0 0 1082.557 595.28"
+	 xml:space="preserve">
+
+<g id="Calque_2">
+
+	<line fill="#D9DADB" stroke="#B1B3B4" stroke-dasharray="4" x1="76.334" y1="429.612" x2="1010.236" y2="429.612"/>
+	<line fill="#D9DADB" stroke="#B1B3B4" stroke-dasharray="4" x1="76.334" y1="368.29" x2="1010.236" y2="368.29"/>
+	<line fill="#D9DADB" stroke="#B1B3B4" stroke-dasharray="4" x1="76.334" y1="306.968" x2="1010.236" y2="306.968"/>
+	<line fill="#D9DADB" stroke="#B1B3B4" stroke-dasharray="4" x1="76.334" y1="245.644" x2="1010.236" y2="245.644"/>
+	<line fill="#58585A" stroke="#888887" x1="228.665" y1="479.352" x2="228.665" y2="286.559"/>
+
+	<path fill="none" stroke="#803689" stroke-width="3.5" d="M559.965,482.974c0,0,15.83-9.342,31.824-28.01
+		c15.993-18.666,34.387-40.666,51.18-40.666c27.989,0,25.59,46,97.348,76.639"/>
+
+	<line fill="#58585A" stroke="#888887" x1="444.669" y1="479.437" x2="444.669" y2="182.644"/>
+	<line fill="#58585A" stroke="#888887" x1="553.785" y1="479.437" x2="553.785" y2="182.644"/>
+	<line fill="#58585A" stroke="#888887" x1="711.482" y1="479.437" x2="711.482" y2="114.644"/>
+	<line fill="#58585A" stroke="#888887" x1="772.544" y1="479.437" x2="772.544" y2="150.644"/>
+	<line fill="#58585A" stroke="#888887" x1="829.611" y1="479.437" x2="829.611" y2="182.644"/>
+
+	<g>
+		<g>
+			<rect x="75.834" y="488.937" fill="#464648" width="934.902" height="4"/>
+			<path fill="#FFFFFF" d="M1010.236,489.437v3H76.334v-3H1010.236 M1011.236,488.437h-1H76.334h-1v1v3v1h1h933.902h1v-1v-3V488.437
+				L1011.236,488.437z"/>
+		</g>
+	</g>
+
+	<line fill="#58585A" stroke="#888887" x1="116.326" y1="213.644" x2="116.326" y2="480.437"/>
+	<rect x="97.993" y="509.976" fill="none" width="36.667" height="20"/>
+	<text transform="matrix(1 0 0 1 102.9785 518.6152)" fill="#58585A" font-family="'Arial'" font-size="12">2004</text>
+	<rect x="116.325" y="213.311" fill="none" width="94.001" height="20"/>
+	<text transform="matrix(1 0 0 1 121.3252 222.4307)" fill="#58585A" font-family="'Arial'" font-size="12">(x)HTML/CSS</text>
+	<rect x="228.664" y="286.882" fill="none" width="94.001" height="20"/>
+	<text transform="matrix(1 0 0 1 233.6641 296.002)" fill="#58585A" font-family="'Arial'" font-size="12">PHP/SQL</text>
+	<rect x="444.668" y="181.644" fill="none" width="94.001" height="20"/>
+	<text transform="matrix(1 0 0 1 449.668 190.7637)" fill="#58585A" font-family="'Arial'" font-size="12">JQUERY</text>
+	<rect x="553.784" y="181.644" fill="none" width="94.001" height="20"/>
+	<text transform="matrix(1 0 0 1 558.7842 190.7637)" fill="#58585A" font-family="'Arial'" font-size="12">JAVA</text>
+	<rect x="711.482" y="114.644" fill="none" width="94.001" height="20"/>
+	<text transform="matrix(1 0 0 1 716.4824 123.7637)" fill="#58585A" font-family="'Arial'" font-size="12">HTML5/CSS3</text>
+	<rect x="772.544" y="150.644" fill="none" width="94.001" height="16"/>
+	<text transform="matrix(1 0 0 1 777.5439 159.7637)" fill="#58585A" font-family="'Arial'" font-size="12">EZPUBLISH</text>
+	<rect x="829.61" y="181.644" fill="none" width="130.001" height="20"/>
+	<text transform="matrix(1 0 0 1 834.6104 190.7637)" fill="#58585A" font-family="'Arial'" font-size="12">JQUERY MOBILE</text>
+	<rect x="207.44" y="508.976" fill="none" width="36.667" height="20"/>
+	<text transform="matrix(1 0 0 1 212.4258 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2005</text>
+	<rect x="316.887" y="508.976" fill="none" width="36.667" height="20"/>
+	<text transform="matrix(1 0 0 1 321.8721 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2006</text>
+	<rect x="426.334" y="508.976" fill="none" width="36.668" height="20"/>
+	<text transform="matrix(1 0 0 1 431.3193 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2007</text>
+	<rect x="535.78" y="508.976" fill="none" width="36.668" height="20"/>
+	<text transform="matrix(1 0 0 1 540.7656 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2008</text>
+	<rect x="754.676" y="508.976" fill="none" width="36.666" height="20"/>
+	<text transform="matrix(1 0 0 1 759.6602 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2010</text>
+	<rect x="645.228" y="508.976" fill="none" width="36.668" height="20"/>
+	<text transform="matrix(1 0 0 1 650.2129 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2009</text>
+	<rect x="864.122" y="508.976" fill="none" width="36.667" height="20"/>
+	<text transform="matrix(1 0 0 1 869.1074 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2011</text>
+	<rect x="973.569" y="508.976" fill="none" width="36.667" height="20"/>
+	<text transform="matrix(1 0 0 1 978.5547 517.6152)" fill="#5D5D5F" font-family="'Arial'" font-size="12">2012</text>
+
+
+	<path fill="none" stroke="#009EE0" stroke-width="3.5" d="M126.826,485.25c0,0,44.208-9.539,75.94-25.059
+		s48.41-40.578,79.296-40.578c30,0,47.742,21.049,93.742,21.049c105.529,0,189.946-187.294,307.69-187.332
+		c136.785-0.044,326.741-4,326.741-4"/>
+
+	<path fill="none" stroke="#97BF0D" stroke-width="3.5" d="M235.828,482.88c0,0,39.997-34.888,70.663-34.888
+		s39.332,18.629,66.666,18.629c100.299,0,315.23-204.581,446.388-204.581c38.051,0,190.691-4.795,190.691-4.795"/>
+
+	<path fill="none" stroke="#D40050" stroke-width="3.5" d="M451.737,482.88c0,0,48.164-29.298,64.93-36.855
+		c26.618-12,68.491-26.702,104.491-36.702s60.001-13.999,73.334-17.332c13.333-3.334,41.334-12.668,68-47.334
+		s57.053-79.497,247.744-79.497"/>
+
+	<path fill="none" stroke="#F29400" stroke-width="3.5" d="M716.468,481.385c0,0,50.296-94.055,77.515-109.43
+		c30.018-16.956,55.074-18.553,69.846-32.634c15.506-14.781,49.735-66.248,146.408-66.248"/>
+
+	<path fill="none" stroke="#915E36" stroke-width="3.5" d="M779.267,483.707c0,0,174.085-116.567,230.97-187.477"/>
+
+	<path fill="none" stroke="#87888A" stroke-width="3.5" d="M834.28,482.385c0,0,105.273-186.063,175.956-201.397"/>
+
+
+
+
+	<circle id="circle-2004" class="circle" fill="#FFFFFF" stroke="#39A9DC" stroke-width="3.5" cx="116.326" cy="490.937" r="10.5"/>
+
+	<circle id="circle-2005" class="circle" fill="#FFFFFF" stroke="#97BF0D" stroke-width="3.5" cx="228.665" cy="490.852" r="10.5"/>
+
+	<circle id="circle-2007" class="circle" fill="#FFFFFF" stroke="#D40050" stroke-width="3.5" cx="444.668" cy="490.937" r="10.5"/>
+
+	<circle id="circle-2008" class="circle" fill="#FFFFFF" stroke="#803689" stroke-width="3.5" cx="553.785" cy="490.937" r="10.5"/>
+
+	<circle id="circle-2009" class="circle" fill="#FFFFFF" stroke="#F29400" stroke-width="3.5" cx="711.482" cy="490.937" r="10.5"/>
+
+	<circle id="circle-2010" class="circle" fill="#FFFFFF" stroke="#915E36" stroke-width="3.5" cx="772.544" cy="490.937" r="10.5"/>
+
+	<circle id="circle-2011" class="circle" fill="#FFFFFF" stroke="#87888A" stroke-width="3.5" cx="829.611" cy="490.937" r="10.5"/>
+
+</g>
+</svg>
